@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
 
@@ -40,18 +40,18 @@ const App = () => {
             flexDirection: smallDevice ? "column" : "row"
           }}
         >
-          <Switch>
+          <Routes>
             <Route
               exact
               path="/signup"
-              render={() => <Signup smallDevice={smallDevice} />}
+              element={ <Signup smallDevice={smallDevice} />}
             />
             <Route
               exact
               path="/"
-              render={() => <Login smallDevice={smallDevice} />}
+              element={ <Login smallDevice={smallDevice} />}
             />
-          </Switch>
+          </Routes>
         </div>
       </Router>
     </>
