@@ -133,3 +133,8 @@ input:-webkit-autofill:active {
   border: none;
   color: white;
 }
+.shadowbtn:focus{
+
+    outline:none;
+
+}
