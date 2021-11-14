@@ -63,7 +63,7 @@ const FormContainer = ({ smallDevice, type }) => {
       {type === "login" ? (
         <>
           <h4>Or</h4>
-          <button onClick={()=>navigate("/signup" className="shadow shadowbtn">Signup</button>
+          <button onClick={()=>navigate("/signup")} className="shadow shadowbtn">Signup</button>
         </>
       ) : (
         ""
