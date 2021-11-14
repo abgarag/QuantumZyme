@@ -4,7 +4,7 @@
   "description": "QuantumZymeTask",
   "keywords": ["react", "starter"],
   "main": "src/index.js",
-  homepage:"https://musing-yalow-ec5f07.netlify.app/"
+  homepage:"https://musing-yalow-ec5f07.netlify.app/",
   "dependencies": {
     "lodash": "4.17.21",
     "react": "17.0.2",
