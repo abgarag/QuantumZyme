@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { debounce } from "lodash";
+import {useNavigate} from "react-router-dom"
 const FormContainer = ({ smallDevice, type }) => {
+  const navigate=useNavigate()
   const [values, setValues] = useState({});
 
   const onChange = debounce((e) => {
@@ -61,7 +63,7 @@ const FormContainer = ({ smallDevice, type }) => {
       {type === "login" ? (
         <>
           <h4>Or</h4>
-          <button className="shadow shadowbtn">Signup</button>
+          <button onClick={()=>navigate("/signup" className="shadow shadowbtn">Signup</button>
         </>
       ) : (
         ""
