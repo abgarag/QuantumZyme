@@ -51,6 +51,11 @@ const App = () => {
               path="/"
               element={ <Login smallDevice={smallDevice} />}
             />
+            <Route
+              exact
+              path="/login"
+              element={ <Login smallDevice={smallDevice} />}
+            />
           </Routes>
         </div>
       </Router>
